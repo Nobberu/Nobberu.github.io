@@ -75,12 +75,12 @@
     .context {
         width: 70%;
         height: auto;
-        padding: 54px 36px;
+        padding: 54px;
     }
     .context2 {
         width: 70%;
         height: auto;
-        padding: 54px 36px;
+        padding: 54px;
         text-align: right;
     }
     .contexta {
@@ -312,10 +312,12 @@
 
         .context {
             width: 100%;
+            padding: 54px 36px;
         }
         .context2 {
             width: 100%;
             text-align: left;
+            padding: 54px 36px;
         }
         .contexta {
             padding: 54px 36px;
