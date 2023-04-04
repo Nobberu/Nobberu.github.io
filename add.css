@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Nunito:200');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #141618;
+        color: #dfdfdf;
+        font-family: 'Open Sans', Sans-Serif;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    p {
+        line-height: 200%;
+        letter-spacing: .5px;
+    }
+
+    .lgo {
+        height: 1em;
+        margin: 0 10px 2px 0;
+        vertical-align: middle;
+    }
+
+    .brnd {
+        font-family: 'Nunito', Sans-Serif;
+        font-size: 1rem;
+        margin: 0 .5rem .5rem .5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #AC2929;
+        transition: .2s;
+    }
+
+    a:active {
+        opacity: 0.7;
+    }
+
+    .ttl {
+        font-family: 'Nunito', Sans-Serif;
+        font-size: 45px;
+        font-weight: 100;
+        text-align: center;
+        padding: 60.15px 0 36px 0;
+        margin-block-start: 55px;
+        color: #AC2929;
+    }
+
+    .hdr {
+        font-family: 'Nunito', Sans-Serif;
+        font-weight: 100;
+        font-size: 35px;
+        margin: 0 0 36px 0;
+        color: #AC2929;
+    }
+
+    .cont {
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-color: #1c1c1f;
+        flex-direction: row;
+    }
+
+    .cont2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .context {
+        width: 70%;
+        height: auto;
+        padding: 54px 36px;
+    }
+    .context2 {
+        width: 70%;
+        height: auto;
+        padding: 54px 36px;
+        text-align: right;
+    }
+    .contexta {
+        width: 100%;
+        height: auto;
+        padding: 54px 100px;
+        text-align: center;
+    }
+
+    .contim {
+        width: 45%;
+    }
+    .contim img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contca {
+        display: flex;
+        flex-direction: row;
+        background-color: #1c1c1f;
+        width: 100%;
+        height: fit-content;
+        max-width: 100%;
+        padding-bottom: 54px;
+        justify-content: center;
+        align-items: center;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        text-align: center;
+        margin: 0 30px;
+        max-width: 300px;
+        object-fit: contain;
+        padding: 36px;
+        align-self: normal;
+    }
+    .card img {
+        max-width: 70%;
+    }
+    .card h1 {
+        font-family: 'Nunito', Sans-Serif;
+    }
+
+    .ft {
+        font-family: 'Open Sans', Sans-serif;
+        font-size: 11px;
+        text-align: center;
+        margin: 31px 0;
+    }
+
+    .ft a {
+        -webkit-tap-highlight-color: transparent;
+        word-spacing: 20px;
+    }
+
+    .LeMoB {
+        font-family: 'Open Sans', Sans-Serif;
+        font-size: 8.4px;
+        letter-spacing: 1.4px;
+        background-color: #AC2929;
+        color: #dfdfdf;
+        border: #AC2929;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1px;
+        margin-top: 36px;
+        padding: 13px 31px;
+        transition: .2s ease-out;
+    }
+
+    .LeMoB:hover {
+        background-color: transparent;
+        color: #AC2929;
+    }
+
+    .LeMoB:active {
+        opacity: 0.7;
+    }
+
+    .LeMoB2 {
+        font-family: 'Open Sans', Sans-Serif;
+        font-size: 8.4px;
+        letter-spacing: 1.4px;
+        background-color: transparent;
+        color: #dfdfdf;
+        border: #dfdfdf;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1px;
+        margin-top: 10px;
+        padding: 13px 42px;
+        transition: .2s ease-out;
+    }
+
+    .LeMoB2:hover {
+        opacity: 0.7;
+    }
+
+    .LeMoB2:active {
+        opacity: 0.5;
+    }
+
+
+    .hid {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: transform .7s, opacity .8s ease-in;
+    }
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .navb {
+        z-index: 1;
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1c1c1f;
+        box-shadow:0 0 15px 7px #141618;
+        color: #dfdfdf;
+        padding: 7px 36px 0 36px;
+    }
+
+    .nav-link {
+        height: 100%;
+    }
+
+    .nav-link ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-link li {
+        list-style: none;
+    }
+
+    .nav-link li a {
+        display: block;
+        border-bottom: solid 2px transparent;
+        text-decoration: none;
+        color: white;
+        -webkit-tap-highlight-color: transparent;
+        padding: 9px 1rem 1rem 1rem;
+        transition: .2s ease-out;
+    }
+
+    .nav-link li a:hover {
+        border-bottom: solid 2px #777777;
+    }
+
+    .nav-link li a:active {
+        opacity: 0.5;
+    }
+
+    .ham {
+        position: absolute;
+        top: .9rem;
+        right: 1rem;
+        display: none;
+        background-color: transparent;
+        flex-direction: column;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        border-style: none;
+        justify-content: space-between;
+        -webkit-tap-highlight-color: transparent;
+        width: 40px;
+        height: 22px;
+    }
+    .ham .bar {
+        height: 2px;
+        width: 100%;
+        background-color: #dfdfdf;
+    }
+
+    @media (max-width: 600px) {
+        .navb {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 14px 7px 7px 7px;
+        }
+        .ham {
+            display: flex;
+        }
+        .nav-link {
+            display: none;
+            width: 100%;
+        }
+        .nav-link ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        .nav-link ul li {
+            text-align: center;
+        }
+        .nav-link ul li a {
+            padding: .5rem 1rem;
+        }
+        .nav-link.active {
+            display: flex;
+        }
+
+        .ttl {
+            margin-block-start: 52px;
+        }
+
+        .cont {
+            flex-direction: column-reverse;
+        }
+
+        .cont2 {
+            flex-direction: column-reverse;
+        }
+
+        .context {
+            width: 100%;
+        }
+        .context2 {
+            width: 100%;
+            text-align: left;
+        }
+        .contexta {
+            padding: 54px 36px;
+            text-align: left;
+        }
+        .contim {
+            width: 100%;
+        }
+
+        .ft {
+            margin: 24px 0;
+        }
+    }
