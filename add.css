@@ -31,7 +31,7 @@
 
     a {
         text-decoration: none;
-        color: #AC2929;
+        color: #e31837;
         transition: .2s;
     }
 
@@ -46,7 +46,7 @@
         text-align: center;
         padding: 60.15px 0 36px 0;
         margin-block-start: 55px;
-        color: #AC2929;
+        color: #e31837;
     }
 
     .hdr {
@@ -54,7 +54,7 @@
         font-weight: 100;
         font-size: 35px;
         margin: 0 0 36px 0;
-        color: #AC2929;
+        color: #e31837;
     }
 
     .cont {
@@ -86,7 +86,7 @@
     .contexta {
         width: 100%;
         height: auto;
-        padding: 54px 100px;
+        padding: 54px 300px;
         text-align: center;
     }
 
@@ -143,11 +143,11 @@
 
     .LeMoB {
         font-family: 'Open Sans', Sans-Serif;
-        font-size: 8.4px;
-        letter-spacing: 1.4px;
-        background-color: #AC2929;
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        background-color: #e31837;
         color: #dfdfdf;
-        border: #AC2929;
+        border: #e31837;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
         border-style: solid;
@@ -160,7 +160,7 @@
 
     .LeMoB:hover {
         background-color: transparent;
-        color: #AC2929;
+        color: #e31837;
     }
 
     .LeMoB:active {
@@ -263,7 +263,7 @@
         justify-content: space-between;
         -webkit-tap-highlight-color: transparent;
         width: 40px;
-        height: 22px;
+        height: 20px;
     }
     .ham .bar {
         height: 2px;
