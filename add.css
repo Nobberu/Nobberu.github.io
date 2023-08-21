@@ -8,12 +8,12 @@
         background-color: #141618;
         color: #dfdfdf;
         font-family: 'Open Sans', Sans-Serif;
-        font-size: 15px;
+        font-size: 17px;
         margin: 0;
     }
 
     p {
-        line-height: 200%;
+        line-height: 210%;
         letter-spacing: .5px;
     }
 
@@ -52,7 +52,7 @@
     .hdr {
         font-family: 'Nunito', Sans-Serif;
         font-weight: 100;
-        font-size: 35px;
+        font-size: 40px;
         margin: 0 0 36px 0;
         color: #e31837;
     }
