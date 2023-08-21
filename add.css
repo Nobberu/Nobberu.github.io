@@ -272,6 +272,12 @@
     }
 
     @media (max-width: 600px) {
+        body {
+            font-size: 15px;
+        }
+        .hdr {
+            font-size: 35px;
+        }
         .navb {
             flex-direction: column;
             align-items: flex-start;
