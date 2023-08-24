@@ -183,10 +183,12 @@
         border-radius: 1px;
         margin-top: 10px;
         padding: 13px 42px;
+        border-radius: 4px;
         transition: .2s ease-out;
     }
 
     .LeMoB2:hover {
+        box-shadow: 0px 0px 25px 2px #dfdfdf90;
         opacity: 0.7;
     }
 
