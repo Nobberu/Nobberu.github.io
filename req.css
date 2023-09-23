@@ -334,7 +334,7 @@ body::-webkit-scrollbar {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 800ms;
-  transition-delay: 350ms;
+  transition-delay: 450ms;
   padding: 0;
   margin: 0;
 }
