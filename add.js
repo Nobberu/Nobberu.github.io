@@ -44,3 +44,16 @@ hit.addEventListener('click', () => {
     });
     const hiddenim = document.querySelectorAll('.hidim');
     hiddenim.forEach((el) => observer.observe(el));
+    
+ const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.intersectionRatio > 0) {
+         entry.target.classList.add('showarr');
+        } else if (entry.intersectionRatio == 0){
+         entry.target.classList.remove('showarr');
+        }
+      });
+    });
+    const hidarr = document.querySelectorAll('.hidarr');
+    hidarr.forEach((el) => observer2.observe(el));

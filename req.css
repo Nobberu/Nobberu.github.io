@@ -158,12 +158,17 @@ body::-webkit-scrollbar {
     opacity: 1;
 }
 
+.off {
+  display: none;
+}
+
 .title-pg {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 60vh;
+    padding-top: 20vh;
     font-family: Poppins;
     text-align: center;
     transition: all 600ms;
@@ -187,14 +192,26 @@ body::-webkit-scrollbar {
     font-size: 1vw;
 }
 
-.off {
-  display: none;
+.arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    font-family: Poppins;
+    transition: all 600ms;
+}
+
+.arr img {
+    height: 7vh;
 }
 
 .cont-ab {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 50vh;
+    padding-bottom: 30vh;
+    align-items: center;
+    justify-content: center;
     background-color: #0d0d0d;
     transition: all 600ms;
 }
@@ -244,7 +261,6 @@ body::-webkit-scrollbar {
     -webkit-tap-highlight-color: transparent;
     border-style: solid;
     border-width: 1px;
-    border-radius: 1px;
     margin: 72px 0px 0px 0px;
     padding: 13px 31px;
     border-radius: 4px;
@@ -284,7 +300,6 @@ body::-webkit-scrollbar {
 }
 
 .show {
-  position: static;
   opacity: 1;
   transform: translatex(0);
 }
@@ -306,6 +321,26 @@ body::-webkit-scrollbar {
 
 .showim {
   transform: translatex(-100vw);
+}
+
+.hidarr {
+  display: inline-block;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  background-color: #0d0d0d;
+  transform: scaley(100%);
+  transform-origin: bottom;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 800ms;
+  transition-delay: 800ms;
+  padding: 0;
+  margin: 0;
+}
+
+.showarr {
+  transform: scaley(0);
 }
 
 .nav-on {
