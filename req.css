@@ -206,6 +206,7 @@ a:active{
 }
 
 .arr img {
+    padding-top: 14%;
     height: 7vh;
 }
 
@@ -369,7 +370,7 @@ a:active{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 800ms;
   transition-delay: 350ms;
-  padding: 0;
+  padding: 10% 0 0 0;
   margin: 0;
 }
 
