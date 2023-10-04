@@ -230,6 +230,24 @@ a:active {
   text-decoration: none;
 }
 
+.navsoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3vh;
+  width: 100vw;
+  padding-top: 7%;
+}
+
+.navsoc a {
+  padding: 0 2%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navsoc a img {
+  height: 1.8vw;
+}
+
 .navitem.active {
   display: flex;
   transform: translateY(0);
