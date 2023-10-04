@@ -450,6 +450,24 @@ a:active {
   .navitem a {
     font-size: 1.5rem;
   }
+
+  .navsoc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+    padding-top: 10%;
+  }
+
+  .navsoc a {
+    padding: 0 5%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .navsoc a img {
+    height: 5vw;
+  }
   /************* END NAVBAR *************/
 
   /************* BODY *************/
