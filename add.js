@@ -58,19 +58,18 @@ const observer2 = new IntersectionObserver((entries) => {
 const hidarr = document.querySelectorAll(".hidarr");
 hidarr.forEach((el) => observer2.observe(el));
 
-
 function wait(ev) {
   ev.preventDefault();
   const go = this.getAttribute("href");
-  
-  setTimeout(function(){
+
+  setTimeout(function () {
     splash.classList.remove("done");
   }, 300);
-  
-  setTimeout(function(){
+
+  setTimeout(function () {
     window.location = go;
   }, 1200);
-} 
+}
 
 const link = document.querySelectorAll("a");
-link.forEach(EL => EL.addEventListener("click", wait));
+link.forEach((EL) => EL.addEventListener("click", wait));

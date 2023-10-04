@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* misc */
-
+/************* MISC *************/
 * {
   user-select: none;
 }
@@ -99,11 +98,9 @@ a:active {
   color: transparent;
   background-color: transparent;
 }
+/************* END MISC *************/
 
-/* end misc */
-
-/* startup */
-
+/************* STARTUP *************/
 .splash {
   z-index: 2147483647;
   position: fixed;
@@ -131,11 +128,9 @@ a:active {
 .done {
   transform: translateY(-100vh);
 }
+/************* END STARTUP *************/
 
-/* end startup */
-
-/* navbar */
-
+/************* NAVBAR *************/
 .navbar {
   z-index: 2147483646;
   background-color: transparent;
@@ -160,7 +155,7 @@ a:active {
 
 .brand img {
   width: 14px;
-  padding-right: .8vw;
+  padding-right: 0.8vw;
   float: left;
   vertical-align: middle;
 }
@@ -244,11 +239,9 @@ a:active {
 .off {
   display: none;
 }
+/************* END NAVBAR *************/
 
-/* end navbar */
-
-/* body */
-
+/************* BODY *************/
 .container {
   transition: all 600ms;
 }
@@ -365,11 +358,9 @@ a:active {
 .LeMoB:active {
   opacity: 0.7;
 }
+/************* END BODY *************/
 
-/* end body */
-
-/* footer */
-
+/************* FOOTER *************/
 .ftr {
   display: flex;
   flex-direction: column;
@@ -399,13 +390,10 @@ a:active {
 .soc a img {
   height: 2vw;
 }
-
-/* end footer */
+/************* END FOOTER *************/
 
 @media (max-width: 600px) {
-
-  /* Startup */
-
+  /************* MISC *************/
   .hidarr {
     height: 40vh;
   }
@@ -413,28 +401,40 @@ a:active {
   .arr img {
     padding-top: 14%;
     height: 7vh;
-  }  
+  }
 
+  .hidim {
+    height: 30vh;
+  }
+  /************* END MISC *************/
+
+  /************* STARTUP *************/
   .splash img {
     width: 10%;
   }
+  /************* END STARTUP *************/
 
+  /************* NAVBAR *************/
   .rect {
-    padding: 5% 4% 1% 4%;
+    padding: 8% 8% 1% 8%;
   }
 
   .brand {
+    padding: 10% 8% 1% 8%;
     font-size: 0.85rem;
   }
-  
+
   .brand img {
     width: 0.85rem;
+    padding-right: 2.5vw;
   }
 
   .navitem a {
-    font-size: 5rem;
+    font-size: 1.5rem;
   }
+  /************* END NAVBAR *************/
 
+  /************* BODY *************/
   .jtitle {
     line-height: 320%;
     font-size: 2vw;
@@ -449,27 +449,7 @@ a:active {
     font-size: 2.2vw;
   }
 
-  .brand > img {
-    padding-right: 2.5vw;
-  }
-
-  .navitem a {
-    font-size: 1.5rem;
-  }
-
-  .rect {
-    padding: 8% 8% 1% 8%;
-  }
-
-  .brand {
-    padding: 10% 8% 1% 8%;
-  }
-
   .sct {
-    height: 30vh;
-  }
-
-  .hidim {
     height: 30vh;
   }
 
@@ -487,39 +467,37 @@ a:active {
   .LeMoB {
     margin: 72px 0 62px 0;
   }
+  /************* END BODY *************/
 
-  /* footer */
+  /************* FOOTER *************/
+  .ftr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    font-size: 3vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 6% 0;
+  }
 
-.ftr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #1f1f1f;
-  font-size: 3vw;
-  font-weight: 300;
-  letter-spacing: 2px;
-  padding: 6% 0;
-}
+  .soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+    padding: 2% 0;
+  }
 
-.soc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5vh;
-  width: 100vw;
-  padding: 2% 0;
-}
+  .soc a {
+    padding: 0 5%;
+    -webkit-tap-highlight-color: transparent;
+  }
 
-.soc a {
-  padding: 0 5%;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.soc a img {
-  height: 6vw;
-}
-
-/* end footer */
-
+  .soc a img {
+    height: 6vw;
+  }
+  /************* END FOOTER *************/
 }
