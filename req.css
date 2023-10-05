@@ -57,7 +57,7 @@ a:active {
 .hidim {
   display: inline-block;
   height: 50vh;
-  width: 100%;
+  width: 76.5%;
   position: absolute;
   background-color: #1a1a1a;
   transform: scalex(100vw);
@@ -331,8 +331,9 @@ a:active {
 
 .sct img {
   display: block;
-  width: 100%;
+  width: 106%;
   height: 100%;
+  padding: 0 12vw;
   object-fit: cover;
 }
 
@@ -466,7 +467,7 @@ a:active {
   }
 
   .navsoc a img {
-    height: 5vw;
+    height: 6vw;
   }
   /************* END NAVBAR *************/
 
