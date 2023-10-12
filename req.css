@@ -330,7 +330,7 @@ a:active {
 
 .sct img {
   display: block;
-  width: 106%;
+  width: 100%;
   height: 100%;
   padding: 0 12vw;
   object-fit: cover;
@@ -423,6 +423,7 @@ a:active {
 
   .hidim {
     height: 30vh;
+    width: 100vw;
   }
   /************* END MISC *************/
 
@@ -487,6 +488,10 @@ a:active {
 
   .sct {
     height: 30vh;
+  }
+
+  .sct img {
+    padding: 0;
   }
 
   .text {
