@@ -318,6 +318,11 @@ a:active {
   background-color: #0d0d0d;
 }
 
+b {
+  font-family: newsreader;
+  letter-spacing: 2px;
+}
+
 .sct {
   display: flex;
   align-items: center;
