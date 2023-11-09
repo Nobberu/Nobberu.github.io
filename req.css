@@ -493,6 +493,10 @@ b {
   /************* END NAVBAR *************/
 
   /************* BODY *************/
+  .title-pg {
+    padding-top: 15vh;
+  }
+
   .jtitle {
     line-height: 320%;
     font-size: 2vw;
