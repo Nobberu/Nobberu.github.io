@@ -73,3 +73,8 @@ function wait(ev) {
 
 const link = document.querySelectorAll("a");
 link.forEach((EL) => EL.addEventListener("click", wait));
+
+function onClick(element) {
+  document.getElementById("img").src = element.src;
+  document.getElementById("modal").style.display = "block";
+}

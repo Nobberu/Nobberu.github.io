@@ -5,6 +5,10 @@
   user-select: none;
 }
 
+:root {
+  --gap: 0.7vw 0.7vw;
+}
+
 body {
   background-color: #0d0d0d;
   color: #e8e8e8;
@@ -18,8 +22,21 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
 a:hover {
   opacity: 0.7;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .lock {
@@ -62,7 +79,7 @@ a:hover {
   transform: scalex(100vw);
   transform-origin: left;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.94, 0.21, 0.49, 0.95);
+  transition-timing-function: cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition-duration: 0.6s;
   transition-delay: 600ms;
   padding: 0;
@@ -232,7 +249,7 @@ a:hover {
   transform: translateY(-100vh);
   -webkit-tap-highlight-color: transparent;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition-duration: 800ms;
   margin: 0;
   padding: 0;
@@ -251,7 +268,7 @@ a:hover {
   justify-content: center;
   height: 3vh;
   width: 100vw;
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .navsoc a {
@@ -274,6 +291,67 @@ a:hover {
 }
 /************* END NAVBAR *************/
 
+/************* GALLERY *************/
+.out-gall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  gap: var(--gap);
+}
+.gall {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  gap: var(--gap);
+}
+
+.gall img {
+  border-radius: 8px;
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  object-fit: scale-down;
+}
+
+.gall img:hover {
+  transform: translateY(-10px);
+}
+
+.modal {
+  z-index: 200000;
+  display: none;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation-name: fade;
+  animation-duration: 0.5s;
+  object-fit: none;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+.modal-content img {
+  width: 76vw;
+  height: auto;
+}
+/************* END GALLERY *************/
+
 /************* BODY *************/
 .container {
   transition: all 600ms;
@@ -284,8 +362,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
-  padding-top: 20vh;
+  height: 100vh;
   font-family: Poppins;
   text-align: center;
 }
@@ -492,11 +569,22 @@ b {
   }
   /************* END NAVBAR *************/
 
-  /************* BODY *************/
-  .title-pg {
-    padding-top: 15vh;
+  /************* GALLERY *************/
+  .gall {
+    width: 26.5%;
   }
 
+  .gall img {
+    border-radius: 3px;
+  }
+
+  .modal-content img {
+    width: 80vw;
+    height: auto;
+  }
+  /************* END GALLERY *************/
+
+  /************* BODY *************/
   .jtitle {
     line-height: 320%;
     font-size: 2vw;
