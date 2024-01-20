@@ -535,8 +535,8 @@ b {
 
   /************* NAVBAR *************/
   .rect {
-    width: 6vw;
-    height: 3vh;
+    width: 7vw;
+    height: 3.2vh;
     padding: 8% 8% 1% 8%;
   }
 
@@ -547,7 +547,7 @@ b {
 
   .brand img {
     width: 0.85rem;
-    padding: 0.25vh 2.5vw 0 0;
+    padding: 0.4vh 2.5vw 0 0;
   }
 
   .navitem a {
