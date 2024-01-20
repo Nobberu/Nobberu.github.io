@@ -11,7 +11,7 @@
 
 body {
   background-color: #0d0d0d;
-  color: #e8e8e8;
+  color: #efefef;
   font-family: Kumbh Sans;
   font-weight: 200;
   padding: 0;
@@ -158,22 +158,39 @@ a:hover {
 }
 
 .brand {
-  font-size: 14px;
+  font-size: 1vw;
   padding: 3% 12vw 1% 12vw;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
+  font-family: Poppins;
+  font-weight: 500;
 }
 
 .brand a {
   text-decoration: none;
-  color: #e8e8e8;
+  color: #efefef;
 }
 
 .brand img {
-  width: 14px;
-  padding-right: 0.8vw;
+  width: 1vw;
+  padding: 0.27vw 0.5vw 0 0;
   float: left;
   vertical-align: middle;
+}
+
+.rect {
+  display: flex;
+  background-color: transparent;
+  width: 1.7vw;
+  height: 1.6vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-tap-highlight-color: transparent;
+  justify-content: center;
+  padding: 3% 12vw 1% 12vw;
+  align-items: center;
+  cursor: pointer;
 }
 
 .ham {
@@ -185,31 +202,31 @@ a:hover {
   border-style: none;
   justify-content: space-between;
   width: 100%;
-  height: 12px;
+  height: 1vh;
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ham .bar1 {
-  height: 2px;
+  height: 0.16vh;
   width: 100%;
-  background-color: #e8e8e8;
+  background-color: #efefef;
   transform-origin: left;
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ham .bar2 {
-  height: 2px;
+  height: 0.16vh;
   width: 70%;
-  background-color: #e8e8e8;
+  background-color: #efefef;
   transform-origin: left;
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ham.active {
-  height: 24px;
+  height: 2.5vh;
 }
 
 .ham.active .bar1 {
@@ -219,21 +236,6 @@ a:hover {
 .ham.active .bar2 {
   transform: rotate(-45deg);
   width: 100%;
-}
-
-.rect {
-  display: flex;
-  background-color: transparent;
-  width: 32px;
-  height: 19px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -webkit-tap-highlight-color: transparent;
-  justify-content: center;
-  padding: 3% 12vw 1% 12vw;
-  align-items: center;
-  cursor: pointer;
 }
 
 .navitem {
@@ -256,7 +258,7 @@ a:hover {
 }
 
 .navitem a {
-  color: #e8e8e8;
+  color: #efefef;
   font-size: 3rem;
   padding: 5vh;
   text-decoration: none;
@@ -442,7 +444,7 @@ b {
 }
 
 .text h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3vw;
   color: #e31837;
 }
@@ -453,7 +455,7 @@ b {
   font-size: 42.5%;
   letter-spacing: 1.85px;
   background-color: #e31837;
-  color: #e8e8e8;
+  color: #efefef;
   border: #e31837;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -543,7 +545,7 @@ b {
 
   .brand img {
     width: 0.85rem;
-    padding-right: 2.5vw;
+    padding: 0.25vh 2.5vw 0 0;
   }
 
   .navitem a {
