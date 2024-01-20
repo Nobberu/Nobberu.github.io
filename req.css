@@ -535,6 +535,8 @@ b {
 
   /************* NAVBAR *************/
   .rect {
+    width: 6vw;
+    height: 3vh;
     padding: 8% 8% 1% 8%;
   }
 
